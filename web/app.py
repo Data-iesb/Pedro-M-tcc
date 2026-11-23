@@ -34,10 +34,6 @@ def mostrar_checagem(checagem):
     st.caption("Alegação examinada pela fonte:")
     st.text(checagem["alegacao"])
     st.link_button("Ler a checagem no Boatos.org", checagem["url"])
-    st.caption("O resultado acima foi extraído do selo de conclusão da página. "
-               "É a conclusão publicada pelo Boatos.org, não uma previsão do SVM.")
-    st.caption("A alegação examinada e o artigo que a explica são conteúdos diferentes. "
-               "Esta análise se refere à alegação exibida acima.")
 
 
 def mostrar_consulta(resultado):

@@ -63,7 +63,6 @@ class TestChecagem(unittest.TestCase):
         self.assertFalse(app.warning)
         self.assertFalse(app.metric)
         self.assertFalse(any("Há indícios de que seja verdadeira" in m.value for m in app.markdown))
-        self.assertTrue(any("não uma previsão do SVM" in e.value for e in app.caption))
         carregar.assert_not_called()
         modelo.analisar.assert_not_called()
         st.cache_resource.clear()
